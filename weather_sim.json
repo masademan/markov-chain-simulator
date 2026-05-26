@@ -1,0 +1,44 @@
+{
+    "data": {
+        "5000": {
+            "Cloud": 24258,
+            "Rain": 86461,
+            "Sun": 58210,
+            "Thunderstorm": 42555
+        }
+    },
+    "trial_dict": {
+        "connections": {
+            "Cloud|C|Cloud": [
+                "Cloud|0.45",
+                "Rain|0.2",
+                "Thunderstorm|0.05",
+                "Sun|0.3"
+            ],
+            "Rain|R|Rain": [
+                "Rain|0.7",
+                "Thunderstorm|0.2",
+                "Sun|0.1"
+            ],
+            "Sun|S|Sun": [
+                "Sun|0.8",
+                "Cloud|0.15",
+                "Rain|0.05"
+            ],
+            "Thunderstorm|TS|Thunderstorm": [
+                "Thunderstorm|0.6",
+                "Rain|0.4"
+            ]
+        },
+        "max_runs": 5000,
+        "special_prints": [
+            "Sun",
+            "Rain",
+            "Thunderstorm",
+            "Cloud"
+        ],
+        "special_stops": [],
+        "starting_state_name": "Sun",
+        "verbosity": 1
+    }
+}
